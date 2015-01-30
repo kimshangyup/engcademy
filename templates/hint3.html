@@ -1,0 +1,115 @@
+<html>
+<head>
+	<title>Engcademy</title>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+   </script>
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+   <!-- Optional theme -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+   <link href='http://fonts.googleapis.com/css?family=Poiret+One|Gloria+Hallelujah|Indie+Flower' rel='stylesheet' type='text/css' />
+   <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/hanna.css"/>
+
+<!--jquery cdn-->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+   <style>
+   
+   div{
+
+      height: 100%;
+   }
+   .col-md-3{
+   	padding:40px;
+   	border-right:1px solid lightgray;
+   	background-color:#F2F2F2;
+   }
+   .col-md-2{
+  border-left:1px solid lightgray; 	
+  background-color:#FEFFDD;
+   }
+form{
+	margin-top:70px;
+}
+   h2 {
+      margin-top: 40px;
+   }
+h3{
+	margin-top:80px;
+}
+   p {
+      line-height: 180%
+   }
+
+.right{
+	color:green;
+}
+.wrong{
+	color:red;
+}
+.progress{
+	margin-bottom:-40px;
+}
+
+.navbar-fixed-top{
+background-image:linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+color:white;
+}
+
+li,.glyphicon{
+	color:gray;
+}
+
+
+.hint{
+
+    color:#FEFFDD;
+}
+
+.hint_color{
+
+    color:gray;
+}
+
+</style>
+</head>
+<body>
+	<div class="col-md-2">
+	<h3><a  id="hint_title" href="#">Hint</a> </h3><span class="glyphicon glyphicon-comment"></span>
+	<ul>
+		<li class="hint">news</li>
+		<li class="hint">summer vacation</li>
+		<li class="hint">birthday</li>
+		<li class="hint">private</li>
+		<li class="hint">meeting</li>
+		
+	</ul>
+	</div>
+<!-- hint show-->
+<script>
+$(document).ready(function(){
+  $("#hint_title").click(function(){
+    $(".hint").toggleClass("hint_color");
+  });
+});
+
+</script>
+
+   
+   </div>		
+
+
+
+
+
+
+
+
+
+</body>
+</html>
